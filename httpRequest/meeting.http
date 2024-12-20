@@ -1,0 +1,21 @@
+### Create'
+POST http://localhost:8112/api/meeting
+Content-Type: application/json
+Accept: application/json
+
+{
+  "unit": "Conference Room A",      
+  "ruang_meeting": "Room 101",     
+  "kapasitas": 20,              
+  "tanggal_rapat": "2023-10-15 10:00:00", 
+  "waktu_mulai": "2023-10-15 10:00:00",  
+  "waktu_selesai": "2023-10-15 12:00:00",
+  "jumlah_peserta": 15,              
+  "snack_siang": true,               
+  "makan_siang": false,              
+  "snack_sore": true,                
+  "nominal_konsumsi": 50000          
+}
+
+### GET
+GET http://localhost:8112/api/meeting
